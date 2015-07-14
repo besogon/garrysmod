@@ -38,8 +38,8 @@ function TOOL:LeftClick( trace, attach )
 	
 	-- Clamp for multiplayer
 	if ( !game.SinglePlayer() ) then
-		size = math.Clamp( size, 0, 512 )
-		brght = math.Clamp( brght, 0, 1 )
+		size = math.Clamp( size, 0, 1024 )
+		brght = math.Clamp( brght, 0, 10 )
 	end
 	
 	if	( IsValid( trace.Entity ) && trace.Entity:GetClass() == "gmod_light" && trace.Entity:GetPlayer() == ply ) then
